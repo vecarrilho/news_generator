@@ -94,7 +94,6 @@ class ReportController extends Controller
 
     public function list()
     {
-        dd('a');
         $reports = Report::where('status', 'active')->get();
 
         return view('report.list', compact('reports'));
@@ -102,8 +101,8 @@ class ReportController extends Controller
 
     public function search(Request $request)
     {
-        // $reports = Report::find
+        $reports = Report::findReportsBySentence($request->search)->get();
 
-        return view('report.search', compact('reports'));
+        return view('report.list', compact('reports'));
     }
 }

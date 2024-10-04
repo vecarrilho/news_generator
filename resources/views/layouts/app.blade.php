@@ -27,10 +27,10 @@
                 <!-- Links de navegação (alinhados à direita) -->
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('category.index') }}">Categorias</a>
+                        <a class="nav-link" href="{{ route('category.index') }}">Cadastrar Categorias</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('report.index') }}">Notícias</a>
+                        <a class="nav-link" href="{{ route('report.index') }}">Cadastrar Notícias</a>
                     </li>
                 </ul>
     

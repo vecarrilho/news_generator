@@ -10,6 +10,6 @@ Route::resource('report', ReportController::class);
 Route::get('/list/report', [ReportController::class, 'list'])->name('report.list');
 Route::post('/list/report', [ReportController::class, 'search'])->name('report.search');
 
-// Route::get('/', function () {
-//     dd('a');
-// });
+Route::get('/', function () {
+    return redirect()->route('report.list');
+});

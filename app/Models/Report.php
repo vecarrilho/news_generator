@@ -15,4 +15,16 @@ class Report extends Model
     {
         return $this->belongsTo(Category::class, 'category_id');
     }
+
+    public static function scopeFindReportsBySentence($query, $sentence)
+    {
+        return $query->join('categories', 'categories.id', 'reports.category_id')
+                ->where('reports.status', 'active')
+                ->whereAny([
+                    'reports.title',
+                    'reports.description',
+                    'categories.name',
+                ], 'like', '%'.$sentence.'%')
+                ->select('reports.*');
+    }
 }
