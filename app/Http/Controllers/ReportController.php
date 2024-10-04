@@ -94,6 +94,7 @@ class ReportController extends Controller
 
     public function list()
     {
+        dd('a');
         $reports = Report::where('status', 'active')->get();
 
         return view('report.list', compact('reports'));
