@@ -73,7 +73,7 @@ Clone o projeto
 Entre no diretório do projeto
 
 ```bash
-  cd my-project
+  cd news_generator
 ```
 
 Copie o .env
