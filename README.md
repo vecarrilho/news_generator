@@ -126,5 +126,6 @@ Acesse a aplicação
 
 ## Demonstração
 
+![giphy](https://github.com/user-attachments/assets/47472462-ef56-4723-bce1-a57bcf809286)
 
-![](https://github.com/vecarrilho/news_generator/blob/main/public/gifs/giphy.mp4)
+
