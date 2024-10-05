@@ -127,4 +127,4 @@ Acesse a aplicação
 ## Demonstração
 
 
-https://giphy.com/gifs/axhHQdmVzTi9DMqCFy
+![](https://github.com/vecarrilho/news_generator/blob/main/public/gifs/giphy.mp4)
